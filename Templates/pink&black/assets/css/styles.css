@@ -1,0 +1,79 @@
+/* Initial reset */
+* {
+  margin: auto;
+  padding: auto; }
+
+body, html {
+  max-height: 1100px; }
+
+body {
+  background-image: url("../../images/crystal.jpg");
+  font-family: "Dosis", sans-serif;
+  background-size: 100%;
+  background-size: cover; }
+
+/* defining variables */
+header .gt {
+  color: #ffd700;
+  margin: 100px 120px;
+  font-size: 36px;
+  text-shadow: 4px 4px 10px rgba(240, 230, 140, 0.6); }
+  header .gt a {
+    text-decoration: none;
+    color: inherit; }
+
+section h1 {
+  float: left;
+  color: #fff;
+  margin: -314px auto auto 60px;
+  cursor: pointer; }
+section .menu {
+  float: left;
+  margin: -320px auto auto 10px;
+  padding: 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px; }
+  section .menu div {
+    height: 5px;
+    width: 30px;
+    background-color: #fff;
+    display: block;
+    float: left;
+    clear: left;
+    margin: 2px;
+    border-radius: 5px; }
+section h1, section menu {
+  display: inline; }
+section .menu-items {
+  list-style-type: none;
+  float: left;
+  width: 20%;
+  margin: 20px;
+  display: none;
+  top: 10px;
+  left: 10px; }
+  section .menu-items li {
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    background: linear-gradient(#daa520, #ffd700);
+    font-weight: bold; }
+  section .menu-items a {
+    text-decoration: none;
+    color: #008b8b; }
+section article {
+  width: 20%;
+  margin: 40px 20px;
+  padding: 10px;
+  color: #ffd700;
+  display: inline;
+  float: left;
+  text-align: justify; }
+
+footer {
+  margin: 120px 0 20;
+  color: #ffd700;
+  text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */

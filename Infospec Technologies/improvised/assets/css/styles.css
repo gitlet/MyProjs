@@ -1,0 +1,406 @@
+/* IMPORTING BOURBON */
+/* INITIAL RESET */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  /*hr
+   * @include size(100% 0.5em)
+   * background: shade(#dcdcdc, 60%)
+   * margin: 0px */ }
+  body header {
+    /*h1, .menu
+     * display: inline-block
+     * //float: left */ }
+    body header h1 {
+      height: 40px;
+      width: 6em;
+      float: right;
+      margin: -1px 40px 0 0;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      background: #585858;
+      color: gainsboro;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 4px 10px 20px #696969;
+      z-index: 1; }
+  body nav {
+    /*.menu, .nav-bar
+     * display: inline
+     * //float: left
+     * margin: 10px */ }
+    body nav .nav-bar {
+      list-style-type: none;
+      background-color: #585858;
+      height: 40px;
+      width: 60%;
+      padding: 5px;
+      position: relative;
+      margin: -1px 333px 10px;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 4px 10px 20px #696969; }
+      body nav .nav-bar li {
+        display: inline;
+        float: left;
+        margin: 0 15px;
+        padding: 10px 15px 0; }
+        body nav .nav-bar li a {
+          text-decoration: none;
+          color: gainsboro;
+          font-weight: bold; }
+    body nav .nav-bar {
+      display: none; }
+  body .container {
+    height: 30em;
+    width: 100%;
+    background-image: url("../../images/economiccrystalball.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*> img
+     * @include size(50% 30em)
+     * display: inline
+     * float: left
+     * position: absolute */ }
+  body .logo img {
+    height: 16em;
+    width: 16em;
+    margin: 15px; }
+
+/*  SLIDER  */
+.slider {
+  height: 300px;
+  width: 75%;
+  position: relative;
+  margin-top: -200px;
+  margin-right: 40px;
+  float: right; }
+  .slider div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto; }
+  .slider img {
+    height: 340px;
+    width: 100%; }
+
+section #context p {
+  height: 6em;
+  width: 60%;
+  margin: 60px auto 60px;
+  padding: 30px 20px 5px;
+  font-weight: bold;
+  color: rgba(105, 105, 105, 0.8);
+  text-align: justify;
+  box-shadow: 0px 0px 40px rgba(105, 105, 105, 0.8); }
+  section #context p span {
+    color: red; }
+
+section .articles {
+  margin: 10px auto;
+  padding: 10px;
+  height: 300px;
+  width: 65%;
+  /*article:before
+   * content: ""
+   * background: rgba(8, 48, 46, 0.64)
+   * height: 42px
+   * width: 25px
+   * position: absolute
+   * -webkit-transform: skewY(-50deg)
+   * transform: skewY(-50deg)
+   * margin-top: -24px
+   * margin-left: -11px */ }
+  section .articles article {
+    margin: 5px 20px;
+    padding: 5px 5px 10px 5px;
+    text-align: justify;
+    display: inline;
+    float: left;
+    clear: right;
+    height: 240px;
+    width: 240px; }
+    section .articles article .box-1 {
+      background: #6985a0;
+      height: 10em;
+      width: 10em;
+      position: absolute;
+      margin: 0px;
+      padding: 40px 30px;
+      box-shadow: 5px 5px 20px #349; }
+    section .articles article .box-2 {
+      background: #414e77;
+      height: 10em;
+      width: 10em;
+      position: absolute;
+      margin: 8px;
+      padding: 40px 30px;
+      box-shadow: 5px 5px 20px #349; }
+    section .articles article .box-1:hover, section .articles article .box-2:hover {
+      background: #a2aab3;
+      opacity: 0.6; }
+    section .articles article .box-1:before {
+      content: "";
+      height: 5em;
+      width: 2em;
+      background: #ff6666;
+      float: right;
+      position: relative;
+      margin-top: -42px;
+      opacity: 0.5;
+      z-index: 0;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 4px 0px 10px #2F1818; }
+    section .articles article .box-2:before {
+      content: "";
+      height: 5em;
+      width: 2em;
+      background: #ff6666;
+      float: right;
+      position: relative;
+      margin-top: -42px;
+      z-index: 1;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 4px 0px 10px #2F1818; }
+    section .articles article h3 {
+      margin: 0px;
+      padding: 5px;
+      color: #fff;
+      position: absolute;
+      float: left; }
+  section .articles p {
+    margin: 26px 0;
+    padding: 5px 0;
+    float: left;
+    color: #fff; }
+
+.services {
+  height: 400px;
+  width: 90%;
+  margin: 10px auto; }
+  .services > article {
+    margin: 10px 5px;
+    height: 380px;
+    width: 18.8%;
+    display: inline-block;
+    position: relative;
+    float: left; }
+    .services > article > img {
+      height: 12em;
+      width: 12em;
+      margin: 5px auto;
+      padding: 5px 13px;
+      position: relative;
+      border-radius: 100%; }
+    .services > article > p {
+      margin-top: 5px;
+      padding: 5px;
+      position: absolute;
+      text-align: justify;
+      float: left;
+      color: #3f3f3f; }
+    .services > article > a {
+      text-decoration: none;
+      background: #3f3f3f;
+      padding: 5px 10px;
+      margin: 160px 66px;
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+      float: left;
+      border-radius: 5px; }
+    .services > article > a:hover {
+      background: #a5a5a5;
+      color: #3f3f3f; }
+
+.info {
+  width: 78%;
+  margin: 40px auto;
+  background-color: rgba(220, 220, 220, 0.4);
+  border-radius: 15px; }
+  .info td {
+    margin: 10px;
+    padding: 10px; }
+    .info td > fieldset {
+      margin: 10px;
+      padding: 10px 40px;
+      border: 1px solid #000;
+      height: 12em;
+      width: 14em;
+      border-radius: 5px; }
+      .info td > fieldset legend {
+        background-color: rgba(105, 105, 105, 0.6);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: rgba(105, 105, 105, 0.8); }
+      .info td > fieldset > p {
+        padding: 5px;
+        display: inline;
+        float: right;
+        text-align: justify; }
+        .info td > fieldset > p span {
+          color: #ff0000;
+          font-weight: bold; }
+      .info td > fieldset > img {
+        height: 3em;
+        width: 5em;
+        margin: 0px;
+        padding: 5px;
+        display: inline;
+        float: left; }
+
+aside {
+  float: right;
+  position: relative;
+  margin: -100px 30px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg); }
+  aside a {
+    text-decoration: none; }
+  aside span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #9a9a9a;
+    position: absolute; }
+  aside #go-to {
+    margin-top: 13px;
+    margin-left: -92px;
+    background: rgba(128, 128, 128, 0.4) none repeat scroll 0% 0%;
+    position: absolute;
+    display: inline-block;
+    padding: 5px;
+    height: 23px;
+    width: 80px; }
+  aside #go-to h4 {
+    background: rgba(105, 105, 105, 0.4) none repeat scroll 0% 0%;
+    padding: 0px 10px; }
+  aside #go-to {
+    display: none; }
+
+/*aside:hover
+ * -webkit-transform: rotate(90deg)
+ * -ms-transform: rotate(90deg)
+ * -moz-transform: rotate(90deg)
+ * transform: rotate(90deg) */
+.comments {
+  margin: 10px 20px;
+  height: 400px;
+  width: 40em;
+  display: inline;
+  float: left; }
+  .comments form {
+    background: rgba(220, 220, 220, 0.4);
+    border-radius: 5px; }
+    .comments form td {
+      margin: 10px;
+      padding: 10px 30px; }
+      .comments form td input {
+        padding: 5px 15px; }
+      .comments form td input:hover, .comments form td textarea:hover {
+        border: 2px solid dimgray; }
+    .comments form #submit {
+      margin-top: 5px;
+      padding-top: 124px;
+      padding-left: 1px;
+      position: relative; }
+
+.soc-nwrkg {
+  background: rgba(220, 220, 220, 0.4);
+  border-radius: 5px;
+  height: 400px;
+  width: 40em;
+  float: right;
+  position: relative;
+  display: inline;
+  margin: 10px; }
+  .soc-nwrkg article {
+    height: auto;
+    width: 18em;
+    margin: 15px 5px;
+    padding: 10px;
+    display: inline;
+    float: left; }
+    .soc-nwrkg article > img {
+      height: 2em;
+      width: 2em; }
+    .soc-nwrkg article > h4 {
+      background: #3f3f3f;
+      padding: 5px;
+      color: rgba(255, 255, 255, 0.6); }
+    .soc-nwrkg article > p {
+      text-align: justify; }
+
+footer {
+  height: 260px;
+  width: 100%;
+  background-color: #3f3f3f;
+  clear: both;
+  /*article
+   * display: inline
+   * float: left
+   * margin: 10px
+   * border: 1px solid #000 */ }
+  footer .art-1 > .follow-us {
+    list-style-type: none;
+    height: auto;
+    width: 12em;
+    margin: 20px 15px auto 90px;
+    display: inline;
+    float: left; }
+    footer .art-1 > .follow-us h3 {
+      color: rgba(255, 255, 255, 0.4); }
+    footer .art-1 > .follow-us li {
+      margin: 5px;
+      padding: 5px; }
+      footer .art-1 > .follow-us li a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.4);
+        font-weight: bold; }
+  footer .art-2 #mailing-list {
+    display: inline;
+    float: left;
+    margin: 20px 15px auto 10px;
+    padding: 10px 15px; }
+    footer .art-2 #mailing-list h3 {
+      color: rgba(255, 255, 255, 0.4); }
+    footer .art-2 #mailing-list p {
+      text-align: justify;
+      margin-bottom: 15px;
+      color: rgba(255, 255, 255, 0.4); }
+    footer .art-2 #mailing-list input {
+      display: inline;
+      padding: 10px; }
+  footer .art-3 #colophon {
+    display: inline;
+    float: left;
+    margin: 20px 15px auto 5px;
+    padding: 10px; }
+    footer .art-3 #colophon h3 {
+      color: rgba(255, 255, 255, 0.4); }
+    footer .art-3 #colophon p {
+      text-align: justify;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.4); }
+    footer .art-3 #colophon #terms {
+      display: inline;
+      float: left;
+      list-style-type: none; }
+      footer .art-3 #colophon #terms li {
+        display: inline;
+        margin: 5px;
+        padding: 5px; }
+        footer .art-3 #colophon #terms li a {
+          color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */

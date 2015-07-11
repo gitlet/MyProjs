@@ -1,0 +1,127 @@
+@import "bourbon/bourbon"
+
+*
+  margin: 0
+  padding: 0
+
+body
+  //background: pink
+  font-family: $helvetica
+
+  .container
+    background: url('../../images/Banner.jpg')
+    background-position: bottom
+    //border: 2px solid #000
+    width: 960px
+    margin: 0px auto
+    h1
+      padding: 20px
+      text-align: center
+      font: 36px normal
+  #menu
+    background: shade(#555, 40%)
+    float: left
+    width: 700px
+    //margin: 5px
+    ul
+      list-style-type: none
+      li
+        float: left
+        margin: 5px
+        padding: 5px
+        a
+          text-decoration: none
+          color: #999
+  #feeds
+    background: shade(#999, 80%)
+    width: 260px
+    float: left
+    //margin: 5px
+    //padding: 10px
+    //vertical-align: top
+    h2
+      color: #999
+      font-weight: normal
+      padding: 5px
+
+  /*~~~~~setting resolution for tablets~~~~~~*/
+  @media screen and (max-width: 959px)
+    .container
+      width: 100%
+    #menu
+      width: 70%
+    #feeds
+      width: 30%
+  /*~~~~~setting resolution for smartphones~~~~~~*/
+
+  @media screen and (max-width: 640px)
+    #menu
+      width: 100%
+    #feeds
+      width: 100%
+  /*==============>>>>>>>>>JAVASCRIPT<<<<<<<<<<<================*/
+  .add
+    //border: 1px dotted #333
+    @include size(400px 200px)
+    margin: 20px 5px
+    float: left
+    h4
+      padding: 10px
+      background: tint(#444, 40%)
+      color: #444
+    input
+      padding: 10px
+      margin: 10px
+
+  .percentage
+    @include size(400px 200px)
+    //border: 1px dotted #000
+    margin: 20px 5px
+    float: left
+    h4
+      background: tint(#444, 40%)
+      padding: 10px
+      color: #444
+    input
+      margin: 10px
+      padding: 10px
+
+  .mod-div
+    @include size(400px 200px)
+    margin: 20px 5px
+    float: left
+    h4
+      background: tint(#444, 40%)
+      padding: 10px
+      color: #444
+    input
+      margin: 10px
+      padding: 10px
+
+  .gallery
+    @include size(400px 500px)
+    //border: 1px dotted #333
+    margin: 20px 5px
+    float: left
+    h4
+      background: tint(#444, 40%)
+      padding: 10px
+      color: #444
+    #gallery-items
+      list-style-type: none
+      display: inline-block
+      li
+        margin: 5px
+        padding: 5px
+        //float: left
+        a
+          text-decoration: none
+          color: #444
+    img
+      @include size(200px auto)
+      border-radius: 5px
+      display: block
+      float: right
+      margin: 5px
+    .hide
+      display: none

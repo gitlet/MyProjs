@@ -1,0 +1,159 @@
+/* Initial reset */
+*
+  margin: 0
+  padding: 0
+
+@media screen and (min-width: 320px)
+  width: 100%
+
+/* declaring variables */
+$pri-clr: #FF1493
+$bg-lgrad: linear-gradient(#000000, #696969)
+$clr2: #222
+$clr3: linear-gradient(#FF1493, #FFC0CB)
+body
+  font-family: 'Varela Round', sans-serif
+header
+  height: 120px
+  width: 100%
+  //border: 1px solid #000
+  background: $bg-lgrad
+  color: $pri-clr
+  text-align: center
+  padding-top: 18px
+  #menu
+    float: left
+    font-size: 20px
+    cursor: pointer
+    margin: 81px 50px
+    padding: 15px 22px 5px
+    border: 2px solid #da70d6
+    background-color: #777
+    border-radius: 0 0 10px 10px
+    box-shadow: 5px 5px 10px #666
+    z-index: 2
+  #deco
+    cursor: pointer
+    background-color: #b890b1
+    height: 20px
+    width: 110px
+    float: left
+    margin-left: -168px
+    margin-top: 82px
+    -webkit-transform: skew(-25deg)
+    -moz-transform: skew(-25deg)
+    transform: skew(-25deg)
+    opacity: 0.4
+    filter: alpha(opacity=40) /* For IE8 and earlier */
+#sliding-pane
+  //border: 1px solid #fff
+  height: 440px
+  width: 175px
+  background: #222
+  float: left
+  margin: 30px auto auto -190px
+  padding: auto 20px
+  display: none
+  border-radius: 0 0 50px 50px
+  box-shadow: 10px 10px 10px #777
+  z-index: -1
+  opacity: 0.8
+  filter: alpha(opacity=80) /*for idiotic ie8 & earlier*/
+  #logo
+    height: 120px
+    width: 120px
+    position: absolute
+    margin: 25px 30px
+    background-image: url('../../images/vine.svg')
+    background-position: top
+    background-size: 100%
+  .nav-bar
+    //opacity: 1
+    //filter: alpha(opacity=0) /*for idiotic ie8 & earlier*/
+    list-style-type: none
+    display: block
+    padding: 160px 0 5px
+    text-align: left
+    letter-spacing: .3em
+    li
+      margin: 0
+      padding: 10px 20px
+      a
+        text-decoration: none
+        color: $pri-clr
+      a:hover
+        color: #fff
+    li:hover
+      background: $clr3
+      border-top: 1px solid #DA70D6
+      border-bottom: 1px solid #DA70D6
+#hero-unit
+  //border: 1px solid #000
+  background-color: #DCDCDC
+  border-radius: 5px
+  width: 800px
+  text-align: justify
+  margin: 5px
+  padding: 5px
+  display: inline
+  float: left
+  //-webkit-transition: linear 2s
+  //-moz-transition: linear 2s
+  //transition: linear 2s width
+  h3, p
+    line-height: 1.5em
+  p
+    margin-top: 20px
+  img
+    width: 50%
+    display: inline
+    float: left
+    margin: 0
+    overflow: hidden
+.notifications
+  //border: 1px solid #555
+  background-color: #DCDCDC
+  border-radius: 5px
+  width: 300px
+  display: inline
+  float: left
+  margin: 5px auto
+  padding: 5px
+  //position: absolute
+  h4, p
+    line-height: 1.5em
+  p
+    margin-top: 5px
+.links
+  //border: 1px dotted #000
+  background-color: #dcdcdc
+  border-radius: 5px
+  height: 246px
+  width: 150px
+  display: inline
+  float: left
+  //clear: left
+  margin: 494px 5px 5px -170px
+  //position: absolute
+  .links-items
+    list-style-type: none
+
+footer
+  height: 240px
+  width: 100%
+  background-image: url('../../images/Monotone-Buildings.jpg')
+  background-size: 100%
+  background-position: bottom
+  float: left
+  clear: both
+  margin: 5px auto auto
+  opacity: 0.6
+  filter: alpha(opacity=60) /* for ie8 and earlier */
+  #footer-content
+    width: 400px
+    float: left
+    margin: 20px 5px 5px 10px
+    padding: 5px
+    text-align: justify
+    p
+      color: #fff

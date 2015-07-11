@@ -1,0 +1,272 @@
+/* IMPORTING BOURBON */
+@import "bourbon/bourbon/bourbon"
+/* INITIAL RESET */
+*
+  margin: 0
+  padding: 0
+body
+  //background: pink
+  font-family: 'Poiret One', cursive, $verdana
+  font-weight: thin
+  //font-family: $verdana
+  #container
+    position: fixed
+    top: 0
+    @include size(100% 180px)
+    //@include linear-gradient(to top, #F5F5DC, #FFF8DC, $fallback: #FFF8DC)
+    background: tint(#FFF8DC, 40%)
+    //color: #FF1493
+    color: shade(#A52A2A, 40%)
+    font-size: 32px
+    //@include size(10em auto)
+    font-weight: thin
+    text-align: center
+    padding-top: 30px
+    //text-align: center
+    //-webkit-transition: height 0.3s linear 0s, padding 0.3s linear 0s
+    //transition: height 0.3s linear 0s, padding 0.3s linear 0s
+    @include transition(all height 0.3s linear 0s, padding 0.3s linear 0s)
+    overflow: hidden
+    z-index: 1
+
+    h1
+      background-color: tint(#dc143c, 40%)
+      width: 50%
+      //margin-left: 40px
+      margin: 5px auto
+      padding: 2px
+      text-align: center
+      box-shadow: 5px 5px 20px #666
+    h1:before
+      content: ""
+      height: 60px
+      width: 30px
+      background-color: #ea728a
+      float: left
+      position: absolute
+      //position: relative
+      margin-left: -48px
+      //margin-left: -2px
+      margin-top: 35px
+      -webkit-transform: skewY(50deg)
+      -moz-webkit-transform: skewY(50deg)
+      transform: skewY(50deg)
+      z-index: -1
+      box-shadow: 5px 5px 12px #666
+    h1:after
+      content: ""
+      height: 60px
+      width: 30px
+      background-color: #ea728a
+      float: right
+      position: absolute
+      //position: relative
+      margin-left: 18px
+      //margin-left: 4px
+      margin-top: 36px
+      //margin-top: -38px
+      -webkit-transform: skewY(-50deg)
+      -moz-webkit-transform: skewY(-50deg)
+      transform: skewY(-50deg)
+      z-index: -1
+      box-shadow: 5px 5px 12px #666
+    //h1:before
+      content: ""
+      height: 60px
+      width: 50px
+      background-color: #ea728a
+      float: left
+      position: absolute
+    #left-ribbon
+      @include size(6em 60px)
+      background: tint(#dc143c, 40%)
+      position: absolute
+      float: left
+      margin-top: 60px
+      margin-left: 172px
+      z-index: -2
+      box-shadow: 4px 4px 20px #666
+    #right-ribbon
+      @include size(6em 60px)
+      background: tint(#dc143c, 40%)
+      position: absolute
+      float: left
+      margin-top: -28px
+      margin-left: 985px
+      z-index: -2
+      box-shadow: 4px 4px 20px #666
+
+  #container > #menu
+    position: absolute
+    bottom: 0
+    //width: 100%
+    //height: 50px
+    @include size(100% 50px)
+    background-color: tint(#DC143C, 40%)
+    //background-color: #8B008B
+    color: #FFF8DC
+    font-size: 20px
+    text-align: center
+    //padding-top: 15px
+    //text-align: center
+    -webkit-transition: height 0.3s linear 0s
+    transition: height 0.3s linear 0s
+    z-index: 1
+    .nav-bar
+      list-style-type: none
+      background-color: #FFF8DC
+      li
+        display: inline
+        float: left
+        margin: 10px 15px
+        padding: 4px 10px
+        font-size: 20px
+        font-weight: bold
+        a
+          text-decoration: none
+          color: #FFF8DC
+
+  .articles
+    //border: 1px solid #000
+    @include size(70% 265px)
+    margin: 240px 15px 5px
+    float: right
+    article
+      float: left
+      display: inline
+      margin: 10px 6px
+      //border: 1px solid #000
+      @include size(220px 250px)
+      //cursor: pointer
+      img
+        //@include size(218px 180px)
+        @include size(172px 150px)
+        //margin: 0px 1px
+        margin: 16px 24px
+        padding: 0px
+        position: relative
+        box-shadow: 10px 0px 20px #666
+
+      //.img
+        display: none
+      h3
+        text-align: center
+        background: tint(#DC143C, 40%)
+        padding: 30px 6px
+        //margin: 1px
+        margin: -20px -3px
+        color: #fff
+        box-shadow: 4px 8px 20px #666
+      /*.hiding-p
+        display: none
+      /*> a
+        display: none
+      > p
+        text-align: justify
+        padding: 5px 10px 9px
+        margin: -233px 24px auto
+        background-color: crimson
+        color: #fff
+        height: 138px
+        position: relative
+        box-shadow: 10px 0px 25px #666
+        a
+          font-weight: bold
+          text-align: center
+          //margin: 10px
+          padding: 10px
+          //background: tint(dodgerblue, 40%)
+          //border-radius: 5px
+          color: #fff
+          position: relative
+          margin: 0px 24px
+
+      h3
+      h3:before
+        content: ""
+        background-color: #EA728A
+        height: 80px
+        width: 25px
+        -webkit-transform: skewX(50deg)
+        transform: skewY(-41deg)
+        position: relative
+        float: left
+        margin-top: -41px
+        margin-left: -4px
+        z-index: -1
+        box-shadow: 10px 0px 15px #BE828E
+      h3:after
+        content: ""
+        background-color: #EA728A
+        height: 80px
+        width: 25px
+        -webkit-transform: skewX(50deg)
+        transform: skewY(41deg)
+        position: relative
+        float: right
+        margin-top: -41px
+        margin-right: -5px
+        z-index: -1
+        box-shadow: -10px 0px 15px #BE828E
+
+/*~~~~~~~UL WITH THE CLASS OF LISTINGS~~~~~~~~~*/
+
+section
+  .listings
+    list-style-type: none
+    float: left
+    @include size(15em 25em)
+    margin-top: 269px
+    //background-color: tint(#dc143c, 30%)
+    //border: 1px solid #000
+    li
+      margin: 5px 10px
+      padding: 5px 15px
+      font-weight: bold
+      a
+        color: tint(#dc143c, 30%)
+        text-decoration: none
+        text-align: justify
+/*~~~~~~~~~~~~~~END OF LISTINGS~~~~~~~~~~~~~~~~*/
+.soc-links
+  @include size(18em 12em)
+  float: right
+  position: relative
+  margin-top: 300px
+  margin-right: 50px
+  > ul
+  list-style-type: none
+  li
+    background-color: tint(#dc143c, 30%)
+    border-radius: 5px
+    box-shadow: 10px 5px 20px #666
+    display: block
+    margin: 5px auto
+    padding: 10px 60px
+    font-weight: bold
+    font-size: 1.2em
+    > a
+      text-decoration: none
+      color: #fff
+/*~~~~~~~~~~~~~~QUOTE~~~~~~~~~~~~~~~*/
+.quote
+  background-color: #fff
+  box-shadow: 0px 3px 25px #666
+  height: 11em
+  width: 30em
+  float: left
+  margin-top: 315px
+  margin-left: 210px
+  margin-bottom: 10px
+  //padding: 12px
+  p
+    text-align: justify
+    font-size: 1.2em
+    color: tint(#dc143c, 40%)
+    font-weight: bold
+    padding: 30px 20px
+  span
+    content: ""
+    height: 60px
+    width: 80px
+    color: #444

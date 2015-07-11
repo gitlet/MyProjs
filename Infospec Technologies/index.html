@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Abdullah" content="Designer">
+  <title>Infospec Technologies</title>
+
+  <!-- importing jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!-- importing custom fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+
+  <!-- importing our main stylesheet 'styles.css' -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><h1>Infospec Technologies</h1></a>
+    <ul class="nav-bar">
+      <li id="item-1"><a href="index.html">HOME</a></li>
+      <li id="item-2"><a href="">ABOUT US</a></li>
+      <li id="item-3"><a href="">PROJECTS</a></li>
+      <li id="item-4"><a href="">CLIENTS</a></li>
+      <li id="item-5"><a href="">CONTACT US</a></li>
+    </ul>
+
+    <!-- SEARCH BOX -->
+    <form action="process.php" method="post">
+      <input type="text" name="search" value="" placeholder="Looking for something" id="srch-form">
+      <input type="submit" value="Submit" id="srch-btn">
+    </form>
+  </header>
+
+<!-- creating bg's for parallax effect
+  <div id="circle-1"></div>
+  <div id="circle-2"></div>
+  <div id="circle-3"></div>
+-->
+  <!-- BUILDING AN ACCORDION -->
+  <section>
+    <div class="accordion">
+      <div>
+        <img src="images/global_focus.jpg" alt="">
+        <h2>Information Technology</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div>
+        <img src="images/shutterstock.jpg" alt="">
+        <h2>Database management</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div>
+        <img src="images/Health-IT-Business.jpg" alt="">
+        <h2>Security</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div>
+        <img src="images/tech-biz.jpg" alt="">
+        <h2>Assessment</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div>
+        <img src="images/it_business_presentation.jpg" alt="">
+        <h2>Risk management</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div>
+        <img src="images/IS-Virtualisation.jpg" alt="">
+        <h2>Disaster Recovery &amp maintenance</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </section> <!-- accordion ends here -->
+
+  <!-- STANDALONE ARTICLES REPRESENTING DISTINCT CONTENT -->
+  <section>
+    <div class="articles">
+    <article>
+      <h2>Industry</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </article>
+    <article>
+      <h2>Outsourcing</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </article>
+    <article>
+      <h2>Enterprises</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </article>
+    <article>
+      <h2>Manifesto</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </article>
+  </div>
+</section>
+<section>  <!-- SECTION-2 OF THE ARTICLES..DUPLICATING -->
+  <div class="articles">
+  <article>
+    <h2>Security</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </article>
+  <article>
+    <h2>Risk Assessment</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </article>
+  <article>
+    <h2>Disaster Recovery</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </article>
+  <article>
+    <h2>Maintenance</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </article>
+</div>
+</section>  <!-- ARTICLES ENDS HERE -->
+
+
+<!-- FOOTER -->
+<footer>
+  <article>
+    <h4>Handmade software</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </article>
+  <article>
+    <h4>Programs</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </article>
+  <article>
+    <h4>Deployment</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </article>
+  <ul class="follow-us">
+    <li><a href="#"><img src="images/googleplus.png" alt=""></a>
+      <form action="goo-plu.php" method="post">
+        <input type="text" name="email" value="" placeholder="Drop in your email">
+        <input type="button" name="name" value="Connect">
+      </form>
+    </li>
+
+    <li><a href="#"><img src="images/facebook.png" alt=""></a>
+      <form action="fb.php" method="post">
+        <input type="text" name="username" value="" placeholder="Connect via facebook">
+        <input type="button" name="name" value="Connect">
+      </form>
+    </li>
+
+    <li><a href="#"><img src="images/twitter.png" alt=""></a>
+      <form action="twit.php" method="post">
+        <input type="text" name="handle" value="" placeholder="Your Twitter handle">
+        <input type="submit" name="name" value="Connect">
+      </form>
+    </li>
+
+    <li><a href="#"><img src="images/linkedin.png" alt=""></a>
+      <form action="fb.php" method="post">
+        <input type="text" name="username" value="" placeholder="Connect via LinkedIn">
+        <input type="button" name="name" value="Connect">
+      </form>
+    </li>
+  </ul>
+  <p id="bottomline">&copy. 2015 All rights reserved. Designed &amp Powered by <strong>Infospec Technologies.</strong></p>
+</footer>
+
+  <!-- importing our main jQuery/JavaScript file - 'functions.js' -->
+  <script type="text/javascript" src="assets/js/functions.js"></script>
+</body>
+</html>

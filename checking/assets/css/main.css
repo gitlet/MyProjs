@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  /*~~~~~setting resolution for tablets~~~~~~ */
+  /*~~~~~setting resolution for smartphones~~~~~~ */
+  /*==============>>>>>>>>>JAVASCRIPT<<<<<<<<<<<================ */ }
+  body .container {
+    background: url("../../images/Banner.jpg");
+    background-position: bottom;
+    width: 960px;
+    margin: 0px auto; }
+    body .container h1 {
+      padding: 20px;
+      text-align: center;
+      font: 36px normal; }
+  body #menu {
+    background: #333333;
+    float: left;
+    width: 700px; }
+    body #menu ul {
+      list-style-type: none; }
+      body #menu ul li {
+        float: left;
+        margin: 5px;
+        padding: 5px; }
+        body #menu ul li a {
+          text-decoration: none;
+          color: #999; }
+  body #feeds {
+    background: #1f1f1f;
+    width: 260px;
+    float: left; }
+    body #feeds h2 {
+      color: #999;
+      font-weight: normal;
+      padding: 5px; }
+  @media screen and (max-width: 959px) {
+    body .container {
+      width: 100%; }
+    body #menu {
+      width: 70%; }
+    body #feeds {
+      width: 30%; } }
+  @media screen and (max-width: 640px) {
+    body #menu {
+      width: 100%; }
+    body #feeds {
+      width: 100%; } }
+  body .add {
+    height: 200px;
+    width: 400px;
+    margin: 20px 5px;
+    float: left; }
+    body .add h4 {
+      padding: 10px;
+      background: #8f8f8f;
+      color: #444; }
+    body .add input {
+      padding: 10px;
+      margin: 10px; }
+  body .percentage {
+    height: 200px;
+    width: 400px;
+    margin: 20px 5px;
+    float: left; }
+    body .percentage h4 {
+      background: #8f8f8f;
+      padding: 10px;
+      color: #444; }
+    body .percentage input {
+      margin: 10px;
+      padding: 10px; }
+  body .mod-div {
+    height: 200px;
+    width: 400px;
+    margin: 20px 5px;
+    float: left; }
+    body .mod-div h4 {
+      background: #8f8f8f;
+      padding: 10px;
+      color: #444; }
+    body .mod-div input {
+      margin: 10px;
+      padding: 10px; }
+  body .gallery {
+    height: 500px;
+    width: 400px;
+    margin: 20px 5px;
+    float: left; }
+    body .gallery h4 {
+      background: #8f8f8f;
+      padding: 10px;
+      color: #444; }
+    body .gallery #gallery-items {
+      list-style-type: none;
+      display: inline-block; }
+      body .gallery #gallery-items li {
+        margin: 5px;
+        padding: 5px; }
+        body .gallery #gallery-items li a {
+          text-decoration: none;
+          color: #444; }
+    body .gallery img {
+      height: auto;
+      width: 200px;
+      border-radius: 5px;
+      display: block;
+      float: right;
+      margin: 5px; }
+    body .gallery .hide {
+      display: none; }
+
+/*# sourceMappingURL=main.css.map */

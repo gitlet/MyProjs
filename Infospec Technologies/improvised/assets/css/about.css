@@ -1,0 +1,50 @@
+.logo img {
+  height: 16em;
+  width: 16em;
+  margin: 15px;
+  display: inline;
+  float: left; }
+
+h1 {
+  color: rgba(128, 128, 128, 0.5);
+  font-size: 48px;
+  font-weight: normal;
+  margin: 20px auto 10px 364px;
+  /* float: left; */
+  position: relative; }
+
+#breadcrumb {
+  background: linear-gradient(rgba(128, 128, 128, 0.4), rgba(169, 169, 169, 0.4));
+  position: relative;
+  margin: 40px auto auto 80px;
+  display: inline-block;
+  border-radius: 5px; }
+  #breadcrumb .breadcrumb-items {
+    list-style-type: none; }
+    #breadcrumb .breadcrumb-items li {
+      display: inline;
+      float: left;
+      margin: 10px 0px;
+      padding: 0px 20px;
+      font-weight: bold;
+      color: rgba(128, 128, 128, 0.6); }
+      #breadcrumb .breadcrumb-items li a {
+        text-decoration: none;
+        color: gray; }
+
+#about-us .about-us {
+  height: 500px;
+  width: 70%;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  float: right; }
+  #about-us .about-us p {
+    margin: 25px 10px auto 10px;
+    text-align: justify;
+    line-height: 2em; }
+
+/*# sourceMappingURL=about.css.map */

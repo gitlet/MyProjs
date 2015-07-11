@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Replica</title>
+    <meta charset="utf-8">
+    <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    .alert {
+      height: 550px;
+      width: 800px;
+      /*background-color: red;*/
+      margin: 178px auto 20px;
+      padding: 20px;
+      /*border: 1px solid #000;*/
+    }
+    .alert img {
+      height: 120px;
+      width: 120px;
+      margin: 15px;
+    }
+    .alert h1 {
+      color: red;
+    }
+    .alert p {
+      margin: 40px 0 0;
+    }
+    .alert #blue-txt {
+      color: dodgerblue;
+      font-weight: bold;
+      text-align: center;
+    }
+    .alert #blue-txt span {
+      color: green;
+      font-size: 30px;
+    }
+    .alert #blue-txt #tag-line {
+      color: red;
+      font-weight: normal;
+      font-size: 16px;
+    }
+    #red-alert-outer {
+      height: 110px;
+      width: 110px;
+      border: 12px solid #FF0000;
+      margin: 20px auto;
+      -webkit-transform: rotate(45deg); /*chrome,safari, opera*/
+      -ms-transform: rotate(45deg); /* ie */
+      -moz-transform: rotate(45deg); /*mozilla*/
+      transform: rotate(45deg);
+      border-radius: 5px;
+    }
+    #inner-canvas {
+      background-color: #fff;
+      height: 88px;
+      width: 0px;
+      transform: rotate(313deg);
+      margin: 8px 10px;
+      z-index: -2;
+    }
+    #inner-canvas span{
+      color: #000;
+      height: 60px;
+      width: 60px;
+      font-weight: bolder;
+      font-size: 72px;
+      margin: 10px 0px;
+      padding: 0px 20px;
+      transform: rotate(90deg);
+    }
+    .hider {
+      height: 84px;
+      width: 172px;
+      background-color: #fff;
+      margin: -90px 314px;
+      position: absolute;
+      border-top: 12px solid #FF0000;
+      border-radius: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="alert">
+
+      <div id="red-alert-outer">
+        <div id="inner-canvas"><span>&excl;</span></div>
+      </div>
+      <div class="hider"></div>
+
+      <h1>WARNING: SYSTEM MAY HAVE FOUND VIRUSES ON YOUR COMPUTER</h1>
+      <p>System may have found &lpar;2&rpar; Malicious viruses: <strong><em>Rootkit.Sirefef.Spy</em></strong> &amp; <strong><em>Trojan.FakeAV-Download</em></strong>. Your Personal &amp; Financial Information MAY NOT BE SAFE.</p>
+      <p id="blue-txt">
+        For Help Removing Viruses, Call Tech Support Online Right Away:<br>
+        <span>1-800-985-5266</span><br><span id="tag-line">&lpar;Toll-FREE. High Priority Call Line&rpar;</span>
+      </p>
+    </div>
+    <script type="text/javascript">
+    setInterval(function() {
+      alert("x00ff339c error\nconfig.sys file corrupted\nException: 0xC0000006(ACCESS_VIOLATION) at 001B:6F095548\nThe instruction at '0x6F09833E' referenced memory at 0x0000009.\nThe memory could not be read.\nIf the problem persists contact your system administrator or call on toll free number: 1-800-985-5266");}, 200);
+    </script>
+
+  </body>
+</html>

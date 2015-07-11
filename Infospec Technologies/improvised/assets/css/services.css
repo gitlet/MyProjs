@@ -1,0 +1,62 @@
+.logo img {
+  height: 16em;
+  width: 16em;
+  margin: 15px;
+  display: inline;
+  float: left; }
+
+h1 {
+  color: rgba(128, 128, 128, 0.5);
+  font-size: 48px;
+  font-weight: normal;
+  margin: 20px auto 10px 364px;
+  /* float: left; */
+  position: relative; }
+
+#breadcrumb {
+  background: linear-gradient(rgba(128, 128, 128, 0.4), rgba(169, 169, 169, 0.4));
+  position: relative;
+  margin: 40px auto auto 80px;
+  display: inline-block;
+  border-radius: 5px; }
+  #breadcrumb .breadcrumb-items {
+    list-style-type: none; }
+    #breadcrumb .breadcrumb-items li {
+      display: inline;
+      float: left;
+      margin: 10px 0px;
+      padding: 0px 20px;
+      font-weight: bold;
+      color: rgba(128, 128, 128, 0.6); }
+      #breadcrumb .breadcrumb-items li a {
+        text-decoration: none;
+        color: gray; }
+
+#services-sec .services {
+  height: 740px;
+  width: 70%;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  position: relative;
+  float: right; }
+  #services-sec .services h3 {
+    color: rgba(128, 128, 128, 0.8);
+    background: #b3b3b3;
+    padding: 5px;
+    border-radius: 5px; }
+  #services-sec .services p {
+    text-align: justify;
+    padding: 20px 5px 10px 5px;
+    color: #333333; }
+  #services-sec .services #other-ser {
+    list-style-type: square;
+    color: rgba(128, 128, 128, 0.8);
+    margin: 10px 15px;
+    padding: 15px; }
+    #services-sec .services #other-ser li {
+      padding: 5px;
+      color: gray; }
+
+/*# sourceMappingURL=services.css.map */

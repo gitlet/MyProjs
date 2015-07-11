@@ -1,0 +1,581 @@
+/* IMPORTING BOURBON */
+@import "bourbon/bourbon"
+/* INITIAL RESET */
+*
+  margin: 0
+  padding: 0
+body
+  background-image: url('../../images/Wallpaper.jpg')
+  //background-repeat: repeat-y
+  background-size: cover
+  //font-family: 'Poiret One', cursive
+  font-family: 'Open Sans Condensed', sans-serif
+  header
+    @include size(960px 50px)
+    margin: 0px auto 25px
+    position: relative
+    //background: linear-gradient(#666, #999)
+    //border: 1px solid #fff
+    nav
+      .nav-bar
+        //780px
+        list-style-type: none
+        //overflow: hidden
+        background: shade(#dcdcdc, 60%)
+        //@include size(740px 180px)
+        float: left
+        //position: absolute
+        opacity: 0.6
+        filter: alpha(opacity=60)
+        margin: 0 10px auto 25px
+        border-radius: 0 0 5px 5px
+        box-shadow: 5px 5px 10px #696969
+        // -webkit-transition: max-height 0.4s
+        // -ms-transition: max-height 0.4s
+        // -moz-transition: max-height 0.4s
+        // -o-transition: max-height 0.4s
+        // transition: max-height 0.4s
+        li
+          display: inline-block
+          //display: block
+          float: left
+          margin: 0 15px
+          padding: 10px 25px
+          //background: tint(#dc143c, 40%)
+          a
+            text-decoration: none
+            color: tint(#808080, 80%)
+            //color: #fff
+            font-weight: bold
+
+      .nav-bar
+        display: none
+
+      // .handle
+      //   width: 100%
+      //   background: shade(#dcdcdc, 40%)
+      //   text-align: left
+      //   box-sizing: border-box
+      //   padding: 15px 10px
+      //   cursor: pointer
+      //   color: #fff
+      //   display: none
+      //   div
+      //     background: tint(#999, 40%)
+      //     @include size(25px 4px)
+      //     margin: 2px 0
+      //     border-radius: 5px
+    h1
+      //110px
+      //@include size(90px 40px)
+      float: left
+      margin: 0px auto auto 770px
+      padding: 4px 15px
+      font-weight: bold
+      font-size: 19px
+      text-align: center
+      cursor: pointer
+      position: absolute
+      background: shade(#dcdcdc, 60%)
+      //opacity: 0.8
+      color: shade(#808080, 60%)
+      border-radius: 0 0 5px 5px
+      box-shadow: 5px 5px 10px #696969
+      //z-index: 1
+
+  /*~~~~~~~~SETTING RESOLUTION~~~~~~~~~*/
+  @media screen and (max-width: 580px)
+    header
+      @include size(auto)
+      h1
+        position: relative
+        float: none
+        margin: auto
+        width: auto
+        //opacity: .4
+        //display: block
+        //content: "clickable"
+        //z-index: 0
+        //display: none
+      // nav > .nav-bar
+      //   max-height: 0
+      // nav > .showing
+      //   max-height: 20em
+      // nav
+      //   .nav-bar
+      //     z-index: 2
+      // nav > .nav-bar
+      //   z-index: 2
+      nav > .nav-bar > li
+        box-sizing: border-box
+        width: 100%
+        padding: 5px 12px
+        text-align: left
+        //border: 1px solid #fff
+        display: block
+      // nav > .handle
+      //   display: block
+      h1, .nav-bar
+        margin-left: 24px
+        display: inline-block
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*>>>>>>>>>END OF HEADER<<<<<<<<<<<<<<*/
+  /*~~~~~~~~CONTAINER FOR LOGO AND SLIDER~~~~~~~~~~*/
+  .container
+    @include size(960px 340px)
+    //border: 1px solid #333
+    background-image: url('../../images/economiccrystalball.jpg')
+    background-position: top
+    background-repeat: no-repeat
+    background-size: 100%
+    margin: 0 auto
+    .logo
+      img
+        @include size(230px)
+        margin: 40px 15px auto
+        float: left
+    /*  SLIDER  */
+    .slider
+      @include size(660px 240px)
+      //border: 1px solid #333
+      position: relative
+      margin-top: 40px
+      margin-right: 40px
+      float: left
+      div
+        position: absolute
+        top: 0px
+        left: 0px
+        right: 0px
+        bottom: 0px
+        margin: auto
+      img
+        @include size(100% 240px)
+  /*~~~~~~~~SETTING RESOLUTION~~~~~~~~~*/
+  @media screen and (max-width: 959px)
+    .container
+      width: 100%
+      .logo
+        img
+          @include size(20%)
+          float: left
+      .slider
+        width: 65%
+        float: left
+  @media screen and (max-width: 539px)
+    .container
+      width: 100%
+      .logo
+        img
+          @include size(16%)
+      .slider
+        width: 100%
+  @media screen and (max-width: 320px)
+    .container
+      width: 100%
+      .logo
+        img
+          @include size(30%)
+          float: none
+          margin: 20px 5px 0 90px
+      .slider
+        width: 100%
+  /*~~~~~~~~~~END OF THE CONTAINER~~~~~~~~~~~*/
+
+section
+  #context
+    p
+      //840px
+      @include size(800px 96px)
+      //border: 1px solid #222
+      margin: 60px auto
+      padding: 30px 20px 5px
+      font-weight: bold
+      color: rgba(255,255,255, .6)
+      text-align: justify
+      box-shadow: 0px 0px 40px rgba(105,105,105, 1)
+      span
+        color: #fff
+
+/*~~~~~~~~SETTING RESOLUTION~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  section
+    #context p
+      @include size(auto)
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.services
+  //border: 1px solid #fff
+  @include size(960px 440px)
+  margin: 10px auto
+  > article
+    //border: 1px solid #fff
+    @include size(170px 420px)
+    margin: 4px 0
+    padding: 6px
+    //display: inline-block
+    position: relative
+    float: left
+    > img
+      @include size(150px)
+      margin: 5px
+      padding: 5px
+      position: relative
+      border-radius: 100%
+    > p
+      margin-top: 5px
+      padding: 4px
+      position: absolute
+      text-align: justify
+      float: left
+      color: tint(#696969, 80%)
+    > a
+      text-decoration: none
+      background: shade(#696969, 40%)
+      padding: 5px 15px
+      margin: 175px 60px
+      color: #fff
+      font-weight: bold
+      position: relative
+      float: left
+      border-radius: 5px
+    > a:hover
+      background: tint(#696969, 40%)
+      color: shade(#696969, 40%)
+/*~~~~~~~~SETTING RESOLUTION~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  .services
+    @include size(auto 2200px)
+    article
+      @include size(170px 420px)
+      margin: 5px
+      padding: 10px
+      display: inline-block
+
+// @media (max-width: 589px) and (min-width: 321px)
+//   .services
+//     @include size(auto 2200px)
+//     article
+//       @include size(170px 420px)
+// @media screen and (max-width: 320px)
+//   .services
+//     @include size(100% 2200px)
+//     article
+//       @include size(auto 420px)
+//       margin: 5px auto
+//       padding: 5px 10px
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// .info
+//   //border: 1px solid #fff
+//   @include size(860px 245px)
+//   margin: 20px auto
+//   background-color: rgba(220,220,220, .4)
+//   border-radius: 5px
+//   td
+//     margin: 5px
+//     padding: 5px
+//     //display: inline-block
+//     > fieldset
+//       @include size(240px 190px)
+//       margin: 5px
+//       padding: 10px
+//       //border: 1px solid #000
+//       border-radius: 5px
+//       legend
+//         background-color: rgba(128,128,128,1)
+//         padding: 5px 10px
+//         border-radius: 5px
+//         font-weight: bold
+//         color: rgba(0,0,0,.4)
+//       > p
+//         padding: 5px
+//         display: inline
+//         float: right
+//         text-align: justify
+//         span
+//           color: #ff0000
+//           font-weight: bold
+//       > img
+//         @include size(5em 3em)
+//         margin: 0px
+//         padding: 5px
+//         display: inline
+//         float: left
+.info
+  //border: 1px solid #fff
+  @include size(860px 245px)
+  margin: 20px auto
+  background-color: rgba(220,220,220, .4)
+  border-radius: 5px
+  article
+    float: left
+    margin: 5px
+    fieldset
+      @include size(240px 190px)
+      margin: 5px
+      padding: 10px
+      //border: 1px solid #000
+      border-radius: 5px
+      legend
+        background-color: rgba(128,128,128,1)
+        padding: 5px 10px
+        border-radius: 5px
+        font-weight: bold
+        color: rgba(0,0,0,.4)
+      > p
+        padding: 5px
+        display: inline
+        float: right
+        text-align: justify
+        span
+          color: #ff0000
+          font-weight: bold
+      > img
+        @include size(5em 3em)
+        margin: 0px
+        padding: 5px
+        display: inline
+        float: left
+
+/*~~~~~~~~~~~SETTING RESOLUTION~~~~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  .info
+    @include size(auto)
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+aside
+  float: right
+  position: relative
+  margin: -30px 5px 5px 0px
+  //margin: -100px 30px
+  -webkit-transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  -moz-transform: rotate(90deg)
+  transform: rotate(90deg)
+  transition: 0s linear 0s
+  a
+    text-decoration: none
+  span
+    font-size: 40px
+    font-weight: bold
+    color: shade(#DCDCDC, 30%)
+    position: absolute
+  #go-to
+    margin-top: 13px
+    margin-left: -92px
+    background: rgba(128,128,128,.4) none repeat scroll 0% 0%
+    position: absolute
+    display: inline-block
+    padding: 5px
+    height: 23px
+    width: 80px
+  #go-to h4
+    background: rgba(105,105,105,.4) none repeat scroll 0% 0%
+    padding: 0px 10px
+    //letter-spacing: 0.08em
+  #go-to
+    display: none
+
+/* WRAPPER FOR CONTAINING THE 'COMMENTS' & 'SOC-NWRK' SECTS*/
+.wrapper
+  @include size(960px 360px)
+  margin: 0px auto
+  padding: 0
+  //border: 1px solid #fff
+
+.comments
+  //border: 1px solid #fff
+  //background: #ec6
+  margin: 5px
+  @include size(500px 400px)
+  float: left
+  // form
+  //   background: rgba(220,220,220,.4)
+  //   border-radius: 5px
+  //   //border: 1px solid #fff
+  //   td
+  //     margin: 5px
+  //     padding: 10px
+  //     input
+  //       padding: 5px 15px
+  //     input:hover, textarea:hover
+  //       border: 2px solid rgb(105,105,105)
+  //       //box-shadow: 0px 0px 20px shade(#696969, 40%)
+  //   #submit
+  //     //float: left
+  //     margin-top: 5px
+  //     padding-top: 124px
+  //     padding-left: 1px
+  //     position: relative
+  form
+    background: rgba(220,220,220,.4)
+    border-radius: 5px
+    padding: 5px
+    p
+      text-align: left
+      //margin: 0 auto
+      color: shade(#696969, 60%)
+      padding: 10px
+      input
+        float: right
+        padding: 5px
+        display: inline-block
+    textarea
+      margin-left: 220px
+      //float: right
+    #btn
+      //float: right
+      //position: absolute
+      margin-left: 380px
+      padding: 2px 10px
+    //border: 1px solid #fff
+.soc-nwrkg
+  @include size(420px 335px)
+  //border: 1px solid #fff
+  background: rgba(220,220,220,.4)
+  border-radius: 5px
+  float: right
+  position: relative
+  //display: inline
+  margin: 5px
+  article
+    @include size(180px auto)
+    //border: 1px solid #222
+    margin: 15px 5px
+    padding: 10px
+    //display: inline
+    float: left
+    > img
+      @include size(2em)
+    > h4
+      background: shade(#696969, 40%)
+      padding: 5px
+      color: rgba(255,255,255,.6)
+    > p
+      text-align: justify
+
+/*~~~~~~~~~~~SETTING RESOLUTION~~~~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  .wrapper
+    @include size(auto)
+  .comments
+    //@include size(auto 400px)
+    @include size(100% auto)
+    float: none
+    margin: 5px auto
+    form
+      p
+        input
+          display: block
+      textarea
+        margin: auto
+        display: block
+      #btn
+        margin: 10px auto
+        padding: 2px 15px
+        display: block
+    // td
+    //   display: block
+  .soc-nwrkg
+    @include size(auto 385px)
+    article
+      @include size(auto)
+      margin: 0
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+footer
+  @include size(960px 260px)
+  background-color: shade(#696969, 40%)
+  opacity: 0.5
+  filter: alpha(opacity=50)
+  clear: both
+  margin: 0 auto
+  border-radius: 10px 10px 0 0
+  .footer-wrapper
+    margin: 0 auto
+    @include size(960px 260px)
+    //border: 1px solid #fff
+
+    .art-1 > .follow-us
+      //border: 1px solid #000
+      list-style-type: none
+      @include size(190px auto)
+      margin: 20px 10px 5px 5px
+      padding: 5px
+      float: left
+      h3
+        color: rgba(255,255,255,.4)
+      li
+        margin: 5px
+        padding: 5px
+        a
+          text-decoration: none
+          color: rgba(255,255,255,0.4)
+          font-weight: bold
+        a:hover
+          color: rgba(255,255,255,1)
+    .art-2
+      #mailing-list
+        //border: 1px solid #fff
+        @include size(320px 140px)
+        float: left
+        margin: 20px 10px 5px 5px
+        padding: 10px
+        h3
+          color: rgba(255,255,255,0.4)
+        p
+          text-align: justify
+          margin-bottom: 15px
+          color: rgba(255,255,255,1)
+        input
+          display: inline
+          padding: 10px
+    .art-3
+      #colophon
+        //border: 1px solid #fff
+        @include size(340px auto)
+        float: left
+        margin: 20px 10px 5px 5px
+        padding: 10px
+        h3
+          color: rgba(255,255,255,0.4)
+        p
+          text-align: justify
+          margin-bottom: 10px
+          color: rgba(255,255,255,1)
+        #terms
+          display: inline
+          float: left
+          list-style-type: none
+          li
+            display: inline
+            //float: left
+            margin: 5px
+            padding: 5px
+            a
+              color: #fff
+
+/*~~~~~~~~~~~SETTING RESOLUTION~~~~~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  footer
+    @include size(100% 640px)
+    .footer-wrapper
+      //@include size(100% auto)
+      .art-1 > .follow-us
+        display: block
+        @include size(100% auto)
+      .art-2 > #mailing-list
+        //display: block
+        @include size(auto)
+        input
+          clear: left
+          //padding: none
+          //float: none
+          display: block
+      .art-3 > #colophon
+        display: block
+        @include size(auto)
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

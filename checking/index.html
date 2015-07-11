@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" media="screen" title="" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <h1>Banner</h1>
+
+      <section id="menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SIGN UP</a></li>
+        </ul>
+      </section>
+
+      <aside id="feeds">
+        <h2>Subscribe to rss feeds</h2>
+      </aside>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    </div>
+
+    <!--ADDITION-->
+    <div class="add">
+      <h4>Arithmetic addition</h4>
+      <p><input type="text" id="num-one">+<input type="text" id="num-two"></p>
+    <p id="add"></p>
+  </div>
+
+  <!--PERCENTAGE-->
+  <div class="percentage">
+    <h4>Percentage</h4>
+    <table>
+      <tr>
+        <td>Actual Price: </td>
+        <td><input type="text" id="ap"></td>
+      </tr>
+      <tr>
+        <td>Percentage Off: </td>
+        <td><input type="text" id="po"></td>
+      </tr>
+      <tr id="pap"></tr>
+    </table>
+  </div>
+
+  <!--MODULO-DIVISION-->
+  <div class="mod-div">
+    <h4>Modulo division</h4>
+    <table>
+      <tr>
+        <td>Divident: </td>
+        <td><input type="text" id="divident"></td>
+      </tr>
+      <tr>
+        <td>Divisor: </td>
+        <td><input type="text" id="divisor"></td>
+      </tr>
+      <tr id="resultant"></tr>
+    </table>
+  </div>
+
+  <!--GALLERY-->
+  <div class="gallery">
+    <h4>Gallery</h4>
+    <ul id="gallery-items">
+      <li><a data-img="rms-pic" id="rms" href="#">RMS</a></li>
+      <li><a data-img="jg-pic" id="jg" href="#">James Gosling</a></li>
+      <li><a data-img="bs-pic" id="bs" href="#">Bjarne Stroustrup</a></li>
+    </ul>
+    <img class="hide" id="rms-pic" src="images/RMS--Richard-M--Stallman.jpg" alt="">
+    <img class="hide" id="jg-pic" src="images/james-gosling-java.jpg" alt="">
+    <img class="hide" id="bs-pic" src="images/Bjarne.jpg" alt="">
+  </div>
+
+
+    <!--IMPORTING/LOADING THE JS FILE-->
+    <script type="text/javascript" src="assets/scripts/js/functions.js"></script>
+  </body>
+</html>

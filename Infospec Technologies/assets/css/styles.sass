@@ -1,0 +1,239 @@
+/* Initial reset */
+*
+  margin: 0
+  padding: 0
+
+/* Declaring variables */
+$lg1: linear-gradient(to left, #008080, #FF6347)
+$lg1-inv: linear-gradient(to left, #FF6347, #008080)
+$lg2: linear-gradient(#20B2AA, #87CEFA)
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body
+  font-family: 'Tangerine', cursive
+
+  header
+    height: 340px
+    width: 100%
+    //border-radius: 100%
+    /* use media queries */
+    background: $lg1
+    text-align: center
+    margin: 0
+    //box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.4)
+    a
+      text-decoration: none
+    h1
+      color: #fff
+      font-size: 40px
+      letter-spacing: .3em
+      font-weight: bold
+      text-align: center
+      padding: 20px
+      //position: absolute
+      //border: 2px solid rgba(255,215,0, .6)
+      background: $lg1-inv
+      box-shadow: 5px 5px 5px rgba(255,99,71, 0.4)
+      //box-shadow: 5px 5px 5px linear-gradient(to left, #FF6347, #008080)
+      //border-radius: 5px
+      width: 500px
+      margin: 0 auto
+    h1:hover
+      background: $lg1
+      cursor: pointer
+    .nav-bar
+      list-style-type: none
+      //margin-top: 40px
+      //margin-left: 10px
+      margin: 160px 0 0
+      //border-top: 2px solid rgba(153,50,204, .4)
+      //padding-top: 5px
+      li
+        display: inline
+        float: left
+        margin: 40px 0 0
+        //border: 2px solid rgba(199,21,133, 0.6)
+        background-color: rgba(199,21,133, 0.3)
+        padding: 20px 40px
+        font-size: bold
+        //border-radius: 5px
+        a
+          text-decoration: none
+          color: #fff
+          font-weight: bold
+      #item-1
+        background-color: #DC143C
+      #item-1:hover
+        background: linear-gradient(#DC143C, #F8F8FF)
+        -webkit-transition: background 1s linear 0s
+        transition: background 1s linear 0s
+
+      #item-2
+        background-color: #8B008B
+      #item-2:hover
+        background: linear-gradient(#8B008B, #F8F8FF)
+
+      #item-3
+        background-color: #FF8C00
+      #item-3:hover
+        background: linear-gradient(#FF8C00, #F8F8FF)
+
+      #item-4
+        background-color: #2E8B57
+      #item-4:hover
+        background: linear-gradient(#2E8B57, #F8F8FF)
+
+      #item-5
+        background-color: #FFD700
+      #item-5:hover
+        background: linear-gradient(#FFD700, #F8F8FF)
+
+  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  /*#circle-1
+    height: 400px
+    width: 400px
+    background: $lg2
+    margin-top: 200px
+    margin-left: -20px
+    border-radius: 100%
+    opacity: 0.6
+    filter: alpha(opacity=60) /* for ie8 or earlier */
+    z-index: -1 */
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+  #srch-form
+    float: right
+    margin: 45px 0 0 5px
+    padding: 10px
+    background-color: darkcyan
+  #srch-btn
+    float: right
+    position: relative
+    margin: 50px 0 0 5px
+    padding: 5px 15px
+  section
+    margin: 10px auto
+
+  /* STYLING THE ACCORDION */
+  .accordion
+    height: 500px
+    width: 95%
+    //border: 1px solid #000
+    //float: left
+    margin: 40px auto 10px 190px
+    //border-bottom: 1px solid rgba(128, 128, 128, 0.6)
+    div
+      height: 400px
+      width: 180px
+      display: inline
+      float: left
+      margin: 0 -40px 0 0
+      //margin-left: -10px
+      padding: 5px
+      position: relative
+      //overflow: hidden
+      box-shadow: 10px 10px 10px rgba(0, 128, 128, 0.4)
+      //box-shadow: border-box
+
+      //overflow: hidden
+      img
+        height: 400px
+        width: 180px
+        margin: 0
+        //display: inline
+        //float: left
+        -webkit-transition: width 0.5s linear
+        transition: width 0.5s linear
+        //transition-origin: right
+      h2
+        padding: 10px 15px
+        text-align: justify
+        margin-top: -380px
+        color: #C71585
+        font-size: 28px
+      p
+        color: inherit
+        padding: 15px
+        font-size: 19px
+
+    div:hover, img:hover
+      width: 320px
+      overflow: hidden
+      cursor: pointer
+      -webkit-transition: width 1s linear 0s
+      -moz-transition: width 1s linear 0s
+      -o-transition: width 1s linear 0s
+      transition: width 1s linear 0s
+      transition-origin: 20%
+
+  .articles
+    height: 200px
+    width: 1200px
+    margin: 10px auto
+    //border: 1px solid #000
+  article
+    display: inline
+    float: left
+    height: 200px
+    width: 220px
+    margin: 10px 25px
+    //margin-left: 50px
+    padding: 10px 15px
+    //border: 1px solid rgba(143, 255, 165, 0.6)
+    h2
+      background-color: rgba(255,165,0, 0.8)
+      padding: 5px 10px
+      color: #dc143c
+      //letter-spacing: 0.2em
+    p
+      padding-top: 20px
+      font-size: 20px
+      //margin-bottom: 10px
+
+/* FINALLY THE FOOTER */
+footer
+  height: 320px
+  width: 100%
+  margin: 20px 0 0
+  background-image: url('../../images/dune.jpg')
+  clear: both
+  background-size: 100%
+  background-repeat: repeat
+  background-position: left
+  h4
+    font-size: 22px
+    background-color: rgba(255,105,180, .4)
+    padding: 5px
+    letter-spacing: 0.2em
+  p
+    background-color: rgba(32,178,170, .4)
+    padding: 10px
+    text-align: justify
+  .follow-us
+    list-style-type: none
+    margin: 20px 0 0 20px
+    padding: 10px 15px
+  li
+    margin: 5px
+    padding: 5px
+    a
+      text-decoration: none
+      color: inherit
+    img
+      height: 30px
+      width: 30px
+      border-radius: 100%
+    form
+      display: inline
+      //float: right
+      margin: -5px 5px 5px 5px
+      //margin: 5px 5px 0 15px
+      padding: 10px 20px
+      position: absolute
+    .hide
+      content: "form"
+      display: none
+  #bottomline
+    text-align: center
+    font-size: 24px
+    margin-top: 35px

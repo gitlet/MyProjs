@@ -1,0 +1,98 @@
+@import "bourbon/bourbon"
+body
+  background-image: url('../../images/Wallpaper.jpg')
+  //background-repeat: repeat-y
+  background-size: cover
+  //font-family: 'Poiret One', cursive
+  font-family: 'Open Sans Condensed', sans-serif
+.logo img
+  height: 16em
+  width: 16em
+  margin: 15px
+  //border: 1px solid #000
+  display: inline
+  float: left
+
+h1
+  color: rgba(128, 128, 128, 1)
+  font-size: 48px
+  font-weight: normal
+  margin: 20px auto 10px 364px
+  /* float: left; */
+  position: relative
+#breadcrumb
+  background: linear-gradient(rgba(128,128,128,.8), rgba(169,169,169,.4))
+  //position: relative
+  margin: 10px auto 5px 250px
+  display: inline-block
+  border-radius: 5px
+  .breadcrumb-items
+    list-style-type: none
+    display: inline-block
+    li
+      display: inline
+      float: left
+      margin: 10px 0px
+      padding: 0px 20px
+      font-weight: bold
+      color: shade(#808080, 40%)
+      a
+        text-decoration: none
+        color: shade(#808080, 60%)
+      a:hover
+        background: rgba(169,169,169, .3)
+        padding: 10px
+        width: 100%
+/*~~~~~~~~~~ SETTING RESOLUTION ~~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  #breadcrumb
+    width: 100%
+    height: auto
+    margin: 5px auto
+    .breadcrumb-items
+      li
+        //text-align: left
+        display: block
+        float: none
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#contact-us
+  .contact-us
+    @include size(70% 340px)
+    background: rgba(128,128,128,.6)
+    padding: 10px
+    border-radius: 5px
+    margin-right: 20px
+    margin-bottom: 10px
+    position: relative
+    float: right
+    h3
+      margin: 25px 10px auto 15px
+      text-align: justify
+      line-height: 2em
+      color: shade(#808080, 60%)
+    .addr
+      text-align: justify
+      line-height: 1.5em
+      letter-spacing: 0.1em
+      color: rgba(128,128,128,1)
+      padding: 10px
+      font-weight: bold
+      p
+        text-align: justify
+        color: shade(#808080, 60%)
+        margin-left: 5px
+      table
+        td
+          padding: 10px 15px
+          color: shade(#808080, 60%)
+      a
+        text-decoration: none
+        color: shade(#808080, 60%)
+      a:hover
+        text-decoration: underline
+/*~~~~~~~~~~ SETTING RESOLUTION ~~~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  #contact-us > .contact-us
+    @include size(98% 400px)
+    margin: 5px
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

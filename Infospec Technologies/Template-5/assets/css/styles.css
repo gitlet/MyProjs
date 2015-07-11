@@ -1,0 +1,238 @@
+/* IMPORTING BOURBON */
+/* INITIAL RESET */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Poiret One", cursive, "Verdana", "Geneva", sans-serif;
+  font-weight: thin; }
+  body #container {
+    position: fixed;
+    top: 0;
+    height: 180px;
+    width: 100%;
+    background: #fffaea;
+    color: #631919;
+    font-size: 32px;
+    font-weight: thin;
+    text-align: center;
+    padding-top: 30px;
+    -webkit-transition: all height 0.3s linear 0s, padding 0.3s linear 0s;
+    -moz-transition: all height 0.3s linear 0s, padding 0.3s linear 0s;
+    transition: all height 0.3s linear 0s, padding 0.3s linear 0s;
+    overflow: hidden;
+    z-index: 1; }
+    body #container h1 {
+      background-color: #ea728a;
+      width: 50%;
+      margin: 5px auto;
+      padding: 2px;
+      text-align: center;
+      box-shadow: 5px 5px 20px #666; }
+    body #container h1:before {
+      content: "";
+      height: 60px;
+      width: 30px;
+      background-color: #ea728a;
+      float: left;
+      position: absolute;
+      margin-left: -48px;
+      margin-top: 35px;
+      -webkit-transform: skewY(50deg);
+      -moz-webkit-transform: skewY(50deg);
+      transform: skewY(50deg);
+      z-index: -1;
+      box-shadow: 5px 5px 12px #666; }
+    body #container h1:after {
+      content: "";
+      height: 60px;
+      width: 30px;
+      background-color: #ea728a;
+      float: right;
+      position: absolute;
+      margin-left: 18px;
+      margin-top: 36px;
+      -webkit-transform: skewY(-50deg);
+      -moz-webkit-transform: skewY(-50deg);
+      transform: skewY(-50deg);
+      z-index: -1;
+      box-shadow: 5px 5px 12px #666; }
+    body #container #left-ribbon {
+      height: 60px;
+      width: 6em;
+      background: #ea728a;
+      position: absolute;
+      float: left;
+      margin-top: 60px;
+      margin-left: 172px;
+      z-index: -2;
+      box-shadow: 4px 4px 20px #666; }
+    body #container #right-ribbon {
+      height: 60px;
+      width: 6em;
+      background: #ea728a;
+      position: absolute;
+      float: left;
+      margin-top: -28px;
+      margin-left: 985px;
+      z-index: -2;
+      box-shadow: 4px 4px 20px #666; }
+  body #container > #menu {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #ea728a;
+    color: #FFF8DC;
+    font-size: 20px;
+    text-align: center;
+    -webkit-transition: height 0.3s linear 0s;
+    transition: height 0.3s linear 0s;
+    z-index: 1; }
+    body #container > #menu .nav-bar {
+      list-style-type: none;
+      background-color: #FFF8DC; }
+      body #container > #menu .nav-bar li {
+        display: inline;
+        float: left;
+        margin: 10px 15px;
+        padding: 4px 10px;
+        font-size: 20px;
+        font-weight: bold; }
+        body #container > #menu .nav-bar li a {
+          text-decoration: none;
+          color: #FFF8DC; }
+  body .articles {
+    height: 265px;
+    width: 70%;
+    margin: 240px 15px 5px;
+    float: right; }
+    body .articles article {
+      float: left;
+      display: inline;
+      margin: 10px 6px;
+      height: 250px;
+      width: 220px;
+      /*.hiding-p
+       * display: none */
+      /*> a
+       * display: none */ }
+      body .articles article img {
+        height: 150px;
+        width: 172px;
+        margin: 16px 24px;
+        padding: 0px;
+        position: relative;
+        box-shadow: 10px 0px 20px #666; }
+      body .articles article h3 {
+        text-align: center;
+        background: #ea728a;
+        padding: 30px 6px;
+        margin: -20px -3px;
+        color: #fff;
+        box-shadow: 4px 8px 20px #666; }
+      body .articles article > p {
+        text-align: justify;
+        padding: 5px 10px 9px;
+        margin: -233px 24px auto;
+        background-color: crimson;
+        color: #fff;
+        height: 138px;
+        position: relative;
+        box-shadow: 10px 0px 25px #666; }
+        body .articles article > p a {
+          font-weight: bold;
+          text-align: center;
+          padding: 10px;
+          color: #fff;
+          position: relative;
+          margin: 0px 24px; }
+      body .articles article h3:before {
+        content: "";
+        background-color: #EA728A;
+        height: 80px;
+        width: 25px;
+        -webkit-transform: skewX(50deg);
+        transform: skewY(-41deg);
+        position: relative;
+        float: left;
+        margin-top: -41px;
+        margin-left: -4px;
+        z-index: -1;
+        box-shadow: 10px 0px 15px #BE828E; }
+      body .articles article h3:after {
+        content: "";
+        background-color: #EA728A;
+        height: 80px;
+        width: 25px;
+        -webkit-transform: skewX(50deg);
+        transform: skewY(41deg);
+        position: relative;
+        float: right;
+        margin-top: -41px;
+        margin-right: -5px;
+        z-index: -1;
+        box-shadow: -10px 0px 15px #BE828E; }
+
+/*~~~~~~~UL WITH THE CLASS OF LISTINGS~~~~~~~~~ */
+section .listings {
+  list-style-type: none;
+  float: left;
+  height: 25em;
+  width: 15em;
+  margin-top: 269px; }
+  section .listings li {
+    margin: 5px 10px;
+    padding: 5px 15px;
+    font-weight: bold; }
+    section .listings li a {
+      color: #e65a76;
+      text-decoration: none;
+      text-align: justify; }
+
+/*~~~~~~~~~~~~~~END OF LISTINGS~~~~~~~~~~~~~~~~ */
+.soc-links {
+  height: 12em;
+  width: 18em;
+  float: right;
+  position: relative;
+  margin-top: 300px;
+  margin-right: 50px;
+  list-style-type: none; }
+  .soc-links li {
+    background-color: #e65a76;
+    border-radius: 5px;
+    box-shadow: 10px 5px 20px #666;
+    display: block;
+    margin: 5px auto;
+    padding: 10px 60px;
+    font-weight: bold;
+    font-size: 1.2em; }
+    .soc-links li > a {
+      text-decoration: none;
+      color: #fff; }
+
+/*~~~~~~~~~~~~~~QUOTE~~~~~~~~~~~~~~~ */
+.quote {
+  background-color: #fff;
+  box-shadow: 0px 3px 25px #666;
+  height: 11em;
+  width: 30em;
+  float: left;
+  margin-top: 315px;
+  margin-left: 210px;
+  margin-bottom: 10px; }
+  .quote p {
+    text-align: justify;
+    font-size: 1.2em;
+    color: #ea728a;
+    font-weight: bold;
+    padding: 30px 20px; }
+  .quote span {
+    content: "";
+    height: 60px;
+    width: 80px;
+    color: #444; }
+
+/*# sourceMappingURL=styles.css.map */

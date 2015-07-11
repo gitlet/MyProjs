@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.alert {
+  height: 550px;
+  width: 800px;
+  /*background-color: red;*/
+  margin: 40px auto;
+  padding: 20px;
+  /*border: 1px solid #000;*/
+}
+.alert img {
+  height: 120px;
+  width: 120px;
+  margin: 15px;
+}
+.alert h1 {
+  color: red;
+}
+.alert p {
+  margin: 40px 0 0;
+}
+.alert #blue-txt {
+  color: dodgerblue;
+  font-weight: bold;
+  text-align: center;
+}
+.alert #blue-txt span {
+  color: green;
+  font-size: 30px;
+}
+.alert #blue-txt #tag-line {
+  color: red;
+  font-weight: normal;
+  font-size: 16px;
+}

@@ -1,0 +1,93 @@
+/* Initial reset */
+*
+  margin: auto
+  padding: auto
+body, html
+  max-height: 1100px
+body
+  background-image: url('../../images/crystal.jpg')
+  font-family: 'Dosis', sans-serif
+  background-size: 100%
+  background-size: cover
+
+/* defining variables */
+$pri-clr: #ffd700
+$b-rad: 5px
+$pri-fsize: 36px
+$li-clr: #008b8b
+
+header
+  .gt
+    color: $pri-clr
+    margin: 100px 120px
+    //line-height: 1em
+    font-size: $pri-fsize
+    text-shadow: 4px 4px 10px rgba(240,230,140, .6)
+    a
+      text-decoration: none
+      color: inherit
+section
+  h1
+    float: left
+    color: #fff
+    margin: -314px auto auto 60px
+    //padding: auto 5px
+    cursor: pointer
+  .menu
+    float: left
+    //top: 0px
+    //left: 500px
+    //right: 0px
+    //bottom: 0px
+    margin: -320px auto auto 10px
+    padding: 10px
+    cursor: pointer
+    //border: 1px solid #fff
+    height: 50px
+    width: 50px
+    div
+      height: 5px
+      width: 30px
+      background-color: #fff
+      display: block
+      float: left
+      clear: left
+      margin: 2px
+      border-radius: $b-rad
+  h1, menu
+    display: inline
+    //position: relative
+  .menu-items
+    list-style-type: none
+    float: left
+    width: 20%
+    margin: 20px
+    display: none
+    //position: relative
+    top: 10px
+    left: 10px
+    li
+      display: block
+      margin: 5px
+      padding: 10px
+      background: linear-gradient(#daa520, #ffd700)
+      font-weight: bold
+    a
+      text-decoration: none
+      color: $li-clr
+
+  article
+    width: 20%
+    margin: 40px 20px
+    padding: 10px
+    //border: 1px solid #000
+    color: $pri-clr
+    //color: #fff
+    display: inline
+    float: left
+    text-align: justify
+
+footer
+  margin: 120px 0 20
+  color: $pri-clr
+  text-align: center

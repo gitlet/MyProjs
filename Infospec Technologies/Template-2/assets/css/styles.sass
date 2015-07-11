@@ -1,0 +1,166 @@
+/* Initial reset */
+*
+  margin: 0
+  padding: 0
+
+/* Declaring variables */
+$bg-w-lg: linear-gradient(#000, #222)
+$bg-w-lg2: linear-gradient(#00FF7F, #40E0D0)
+$bg-w-lg3: linear-gradient(#00FF7F, #40E0D0)
+body
+  //background-color: pink
+  font-family: 'Poiret One', cursive
+header
+  height: 190px
+  width: 100%
+  background-color: #000
+  opacity: 0.8
+  filter: alpha(opacity=80) /* for ie8 or earlier */
+  border-radius: 0 0 50px 0
+  h1
+    float: right
+    margin: 10px
+    padding: 15px
+    font-size: 36px
+    color: #008080
+    border-top: 4px solid rgba(0,255,127, 0.2)
+    border-bottom: 4px solid rgba(0,255,127, 0.2)
+
+/* STYLING THE SEARCH BOX */
+.pull-left
+  float: left
+  position: relative
+  margin-top: 140px
+  margin-left: 15px
+  #form
+    background-color: inherit
+    color: #fff
+    border-radius: 20px
+    padding: 5px
+    width: 250px
+  #srch-lens
+    height: 20px
+    width: 20px
+    float: right
+    margin: 5px 0 0 8px
+/* STYLING THE NAVIGATION BAR */
+.nav-bar
+  list-style-type: none
+  margin-left: 342px
+  background: $bg-w-lg2
+  height: 95px
+  position: absolute
+  margin-top: 95px
+  width: 75%
+  border-radius: 50px 0 55px 0
+  opacity: 0.7
+  filter: alpha(opacity=70) /* ofr ie8 or earlier */
+  overflow-x: hidden
+  overflow-y: hidden
+  li
+    //background: $bg-w-lg2
+    float: left
+    display: inline
+    //margin: 25px 15px 10px 22px
+    margin: 30px 10px
+    //padding: 10px 25px
+    padding: 5px 40px
+    //height: 40px
+    -webkit-transform: skew(45deg,-45deg)
+    transform: skew(45deg, -45deg)
+    font-size: 12px
+    font-weight: bold
+    border-bottom: 1px solid #2F4F4F
+    //width: 100%
+    //position: fixed
+    overflow: hidden
+    a
+      text-decoration: none
+      color: #2F4F4F
+  li:hover
+    background: $bg-w-lg3
+    padding: auto 20px
+    text-align: left
+    border-top: 1px solid #2F4F4F
+    padding: 20px 40px
+    cursor: pointer
+
+aside
+  height: 540px
+  width: 330px
+  display: inline
+  float: left
+  margin: 5px
+  background: $bg-w-lg
+  border-radius: 30px 0 30px 0
+  //opacity: 0.6
+  //filter: alpha(opacity=60) /* for ie8 or earlier */
+  h2
+    text-align: left
+    color: rgba(255,215,0, .4)
+  .our-excellence
+    list-style-type: none
+    margin: 10px
+    padding: 10px
+    li
+      padding: 10px
+      font-weight: bold
+      a
+        text-decoration: none
+        color: rgba(255,215,0, .4)
+    li:hover
+      background: linear-gradient(#008080, #00FF7F)
+      border-radius: 30px 0 30px 0
+      a:hover
+        color: inherit
+.tabs
+  height: 540px
+  width: 800px
+  float: left
+  display: inline
+  margin: 5px
+  padding: 10px
+  //border: 1px solid #000
+  p
+    float: left
+    margin: 15px
+    text-align: justify
+  .tab
+    list-style-type: none
+    li
+      display: inline
+      float: left
+      margin: 10px 2px
+      padding: 10px 20px
+      border-radius: 5px 5px 0 0
+      //background-color: rgba(0,139,139, .4)
+      background: $bg-w-lg3
+      a
+        text-decoration: none
+        color: inherit
+        h2
+          text-align: center
+    .active
+      background: $bg-w-lg
+      color: rgba(255,215,0, .4)
+
+  #excellence, #pro-vision, #welcome
+    display: none
+  #pro-vision img
+    margin: 10px
+    border-radius: 5px
+
+/* FOOTER */
+footer
+  clear: both
+  height: 140px
+  width: 100%
+  background: $bg-w-lg
+  border-radius: 100px 0 0 0
+  color: rgba(255,215,0, .4)
+  p
+    text-align: center
+    //margin: 50px auto 5px
+    padding: 15px
+    //border-bottom: 2px solid rgba(255,215,0, .3)
+    //width: 100px

@@ -1,0 +1,251 @@
+/* INITIAL RESET */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* DECLARING VARIABLES */
+body {
+  font-family: "Orbitron", sans-serif; }
+  body header {
+    height: 200px;
+    background: linear-gradient(#008080, #000);
+    color: #00FF7F; }
+    body header h1 {
+      position: absolute;
+      padding: 75px 160px;
+      font-size: 48px;
+      text-shadow: 10px 5px 10px rgba(0, 255, 255, 0.6); }
+    body header .gear-one {
+      height: 60px;
+      width: 100px;
+      background-color: rgba(0, 255, 255, 0.4);
+      border-radius: 10px;
+      margin: 50px 85px;
+      position: absolute;
+      opacity: 0.6;
+      filter: alpha(opacity=60); }
+    body header .gear-two {
+      height: 90px;
+      width: 90px;
+      background-color: rgba(127, 255, 0, 0.4);
+      border-radius: 10px;
+      margin: 45px 30px;
+      position: absolute;
+      opacity: 0.6;
+      filter: alpha(opacity=60); }
+    body header .gear-three {
+      height: 75px;
+      width: 140px;
+      background-color: rgba(220, 20, 60, 0.4);
+      border-radius: 10px;
+      margin: 100px 0 0 90px;
+      position: absolute;
+      opacity: 0.5;
+      filter: alpha(opacity=50); }
+    body header .gear-four {
+      height: 90px;
+      width: 90px;
+      background-color: rgba(105, 190, 200, 0.4);
+      border-radius: 10px;
+      margin: 20px 0px 0px 225px;
+      position: absolute;
+      opacity: 0.6;
+      filter: alpha(opacity=60); }
+    body header .gear-five {
+      height: 90px;
+      width: 90px;
+      background-color: rgba(255, 215, 0, 0.4);
+      border-radius: 10px;
+      margin: 70px 0px 0px 160px;
+      position: absolute;
+      opacity: 0.6;
+      filter: alpha(opacity=60); }
+    body header .gear-six {
+      height: 90px;
+      width: 90px;
+      background-color: rgba(199, 21, 133, 0.4);
+      border-radius: 10px;
+      margin: 10px 0 0 10px;
+      position: absolute;
+      opacity: 0.6;
+      filter: alpha(opacity=60); }
+    body header .gear-seven {
+      height: 70px;
+      width: 70px;
+      background-color: rgba(255, 165, 0, 0.4);
+      border-radius: 10px;
+      margin: 30px 0 0 110px;
+      position: absolute;
+      opacity: 0.6;
+      filter: alpha(opacity=60); }
+    body header .gear-eight {
+      height: 90px;
+      width: 60px;
+      background-color: rgba(195, 190, 200, 0.4);
+      border-radius: 10px;
+      margin: 90px 0 0 25px;
+      position: absolute;
+      opacity: 0.6;
+      filter: alpha(opacity=60); }
+    body header .bg-txt {
+      width: 400px;
+      float: right;
+      color: rgba(255, 255, 255, 0.4);
+      margin: 10px; }
+      body header .bg-txt h3 {
+        color: rgba(255, 0, 0, 0.8); }
+      body header .bg-txt #alert {
+        margin: 15px 20px;
+        color: #008000;
+        padding: 5px;
+        width: 220px;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: -5px 5px 5px rgba(0, 100, 0, 0.3); }
+      body header .bg-txt #err {
+        margin: 10px 15px;
+        color: #ff0000; }
+
+/*  LAYING OUT BREADCRUMB */
+/*.breadcrumb
+ * height: 40px
+ * width: 80%
+ * margin: 10px auto
+ * padding: 5px
+ * border-radius: 5px
+ * background: $lgbg-2
+ * color: $txt-clr
+ * //border: 1px solid #000 */
+/*######################################### */
+/*  TOGGLING THE NAV-BAR  */
+.nav-bar {
+  display: none; }
+
+.container {
+  height: 200px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: 2; }
+  .container .nav-bar {
+    list-style-type: none;
+    background: linear-gradient(#345, #014);
+    z-index: 2; }
+    .container .nav-bar li {
+      display: block;
+      padding: 10px;
+      z-index: 2; }
+      .container .nav-bar li a {
+        text-decoration: none;
+        color: #00FF7F; }
+  .container #handle {
+    float: right;
+    position: absolute;
+    margin: 0 20px 0 1200px;
+    padding: 10px 25px;
+    background: linear-gradient(#008080, #000);
+    color: #00FF7F;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1; }
+
+/*  AWESOME! MISSION ACCOMPLISHED  */
+/*######################################### */
+/* SETTING A DEEMED BG */
+.deemed-bg {
+  height: 180px;
+  width: 100%;
+  float: left;
+  margin-top: -200px;
+  margin-left: 310px;
+  background-image: url("../../images/prev-1-f.jpg");
+  background-position: top;
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
+
+/* ASIDE SECTION FOR LISTINGS */
+aside {
+  height: 650px;
+  width: 22%;
+  display: inline;
+  float: left;
+  margin: 10px;
+  padding: 5px; }
+  aside h2 {
+    background-color: rgba(0, 128, 128, 0.4);
+    padding: 10px;
+    text-align: center; }
+  aside .listings {
+    font-family: "Jura", sans-serif;
+    list-style-type: none;
+    padding: 20px 5px 10px;
+    background: linear-gradient(#008080, #000); }
+    aside .listings li {
+      margin: 10px;
+      padding: 10px; }
+      aside .listings li a {
+        text-decoration: none;
+        color: #00FF7F; }
+    aside .listings li:hover {
+      border-top: 1px solid #00FF7F;
+      border-bottom: 1px solid #00FF7F;
+      -webkit-transition: 0.5s border-top linear;
+      transition: 0.5s border-top linear;
+      -webkit-transition: 0.5s border-bottom linear;
+      transition: 0.5s border-bottom linear; }
+
+/* LAYING OUT THE HERO UNIT */
+.hero-unit {
+  height: 650px;
+  width: 73%;
+  float: right;
+  display: inline;
+  margin: 10px;
+  padding: 5px;
+  font-family: "Jura", sans-serif; }
+  .hero-unit h2 {
+    font-size: 36px;
+    background-color: rgba(0, 128, 128, 0.4);
+    padding: 10px; }
+  .hero-unit #highlights {
+    list-style-type: none; }
+    .hero-unit #highlights li p {
+      width: 68%;
+      padding: 10px;
+      text-align: justify; }
+    .hero-unit #highlights li img {
+      height: 160px;
+      width: 250px;
+      margin: 5px;
+      padding: 5px; }
+    .hero-unit #highlights li p, .hero-unit #highlights img {
+      display: inline;
+      float: left;
+      margin: 5px; }
+
+/*  LAYING OUT THE FOOTER  */
+footer {
+  height: 240px;
+  width: 100%;
+  background-image: url("../../images/canstock.jpg");
+  background-repeat: repeat-x;
+  background-size: 100%;
+  background-position: top;
+  overflow: hidden;
+  opacity: 0.6;
+  clear: both; }
+  footer img {
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin: 10px; }
+  footer p {
+    color: #00FF7F;
+    padding: 10px;
+    text-align: center; }
+  footer strong:hover {
+    text-decoration: underline;
+    color: linear-gradient(#4682B4, #000); }
+
+/*# sourceMappingURL=template-3-main.css.map */

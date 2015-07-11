@@ -1,0 +1,92 @@
+@import "bourbon/bourbon"
+
+body
+  background-image: url('../../images/Wallpaper.jpg')
+  //background-repeat: repeat-y
+  background-size: cover
+  //font-family: 'Poiret One', cursive
+  font-family: 'Open Sans Condensed', sans-serif
+.logo img
+  height: 16em
+  width: 16em
+  margin: 15px
+  //border: 1px solid #000
+  display: inline
+  float: left
+h1
+  color: rgba(128, 128, 128, 1)
+  font-size: 48px
+  font-weight: normal
+  margin: 20px auto 10px 364px
+  //float: left
+  position: relative
+#breadcrumb
+  background: linear-gradient(rgba(128,128,128,.8), rgba(169,169,169,.4))
+  //position: relative
+  //margin: 40px auto auto 80px
+  margin: 10px auto auto 250px
+  display: inline-block
+  border-radius: 5px
+  .breadcrumb-items
+    list-style-type: none
+    display: inline-block
+    li
+      display: inline
+      float: left
+      margin: 10px 0px
+      padding: 0px 20px
+      font-weight: bold
+      color: shade(#808080, 40%)
+      a
+        text-decoration: none
+        color: shade(#808080, 60%)
+      a:hover
+        background: rgba(169,169,169, .3)
+        padding: 10px
+        width: 100%
+
+/*~~~~~~~~~~ SETTING RESOLUTION ~~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  #breadcrumb
+    width: 100%
+    height: auto
+    margin: auto
+    .breadcrumb-items
+      li
+        //text-align: left
+        display: block
+        float: none
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#services-sec
+  .services
+    @include size(70% 800px)
+    background: rgba(128,128,128,.6)
+    padding: 10px
+    border-radius: 5px
+    margin-right: 20px
+    position: relative
+    float: right
+    h3
+      color: shade(#808080, 40%)
+      background: tint(#808080, 40%)
+      padding: 5px
+      border-radius: 5px
+    p
+      text-align: justify
+      padding: 20px 5px 10px 5px
+      color: shade(#808080, 80%)
+    #other-ser
+      list-style-type: square
+      color: rgba(128,128,128,.8)
+      margin: 10px 15px
+      padding: 15px
+      li
+        padding: 5px
+        color: shade(#808080, 80%)
+
+/*~~~~~~~~~~ SETTING RESOLUTION ~~~~~~~~~~*/
+@media screen and (max-width: 959px)
+  #services-sec > .services
+    @include size(auto 1100px)
+    margin: 5px auto
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

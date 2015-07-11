@@ -1,0 +1,136 @@
+/* INITIAL RESET */
+* {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  max-height: 960px;
+  background-size: cover; }
+
+body {
+  background-image: url("../../images/mg_9633.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Dosis", sans-serif;
+  /*#################################################### */
+  /* THE TRANSPARENT PANE LAID ACROSS THE HOMEPAGE */
+  /*  END OF TRANS-PANE  */
+  /*###################################################### */
+  /*  LAYING OUT THE NAV-BAR  */
+  /* CONNECTING WITH THE CLIENTS */
+  /* END OF THE NAV-BAR */
+  /* DESIGNING THE SEARCH BOX */
+  /* LAYING OUT THE FOOTER */ }
+  body .trans-pane {
+    height: 800px;
+    width: 200px;
+    float: left;
+    margin: 40px 100px;
+    background-color: #B22222;
+    opacity: 0.4; }
+  body #logo {
+    height: 120px;
+    width: 140px;
+    margin: 20px;
+    padding: 10px;
+    z-index: 1; }
+  body p {
+    margin: 525px 5px 10px;
+    color: #FFF8DC;
+    opacity: 1;
+    text-align: center;
+    z-index: 1; }
+  body a {
+    text-decoration: none;
+    color: #FFF8DC;
+    font-weight: bold; }
+  body .nav-bar {
+    list-style-type: none; }
+    body .nav-bar li {
+      font-weight: bold;
+      display: inline;
+      float: left;
+      margin: 20px 15px;
+      padding: 15px;
+      text-align: center; }
+      body .nav-bar li a {
+        text-decoration: none;
+        color: #FFF8DC; }
+    body .nav-bar > li:hover {
+      border-bottom: 2px solid #FFF8DC; }
+  body #pull-right {
+    margin: 15px 5px 5px 140px;
+    padding: 16px 0px 0px;
+    text-decoration: none; }
+    body #pull-right h3 {
+      color: inherit;
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      background-color: #FFF8DC;
+      cursor: pointer; }
+    body #pull-right .connect {
+      display: none; }
+    body #pull-right .connect {
+      list-style-type: none; }
+      body #pull-right .connect li {
+        margin: 0px;
+        padding: 5px;
+        display: block;
+        float: left;
+        clear: left;
+        text-align: center; }
+        body #pull-right .connect li a {
+          text-decoration: none;
+          color: #FFF8DC; }
+  body .form-wrapper {
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    margin: 480px 0 0 440px;
+    padding: 20px; }
+    body .form-wrapper form {
+      float: left;
+      position: relative; }
+      body .form-wrapper form #submit-form {
+        width: 340px;
+        padding: 20px;
+        background-color: rgba(233, 150, 122, 0.5);
+        border-radius: 5px; }
+      body .form-wrapper form #btn {
+        padding: 20px;
+        width: 100px;
+        background: linear-gradient(#D2691E, #FF7F50);
+        border-radius: 5px;
+        opacity: 0.6;
+        cursor: pointer;
+        color: #8B0000;
+        font-weight: bold; }
+
+footer {
+  border-top: 2px solid rgba(255, 248, 220, 0.6);
+  clear: both;
+  color: #FFF8DC;
+  height: 260px;
+  width: 90%;
+  float: right;
+  margin: -150px auto 0px; }
+  footer .articles {
+    margin-left: 180px; }
+    footer .articles article {
+      display: inline;
+      float: left;
+      width: 20%;
+      height: 240px;
+      margin: 10px 10px 10px 20px;
+      background-color: rgba(255, 248, 220, 0.2); }
+      footer .articles article h2 {
+        background-color: rgba(255, 127, 80, 0.4);
+        text-align: center; }
+      footer .articles article p {
+        text-align: justify;
+        margin: 5px;
+        padding: 5px; }
+
+/*# sourceMappingURL=t4main.css.map */
