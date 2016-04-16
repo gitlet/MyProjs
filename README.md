@@ -1,2 +1,2 @@
-# MyProjs
-My 2015 projects carried out at the uae trip
+# Coding_for_Infospec_&_others
+Mobile first development & it's different components
